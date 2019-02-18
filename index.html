@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Board Game's Night!</title>
+</head>
+<body>
+  <header>
+    <h1>Board Game's Night!</h1>
+  </header>
+
+  <main>
+
+    <!-- <form action="">
+      <p>How Many Players Do You Have?</p>
+      <select name="players">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4" selected>4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="10">Up to 10</option>
+        <option value="100">More than 10</option>
+      </select>
+    </form> -->
+
+    <form action="">
+      <fieldset class="players">
+        <p>How Many Players Do You Have?</p>
+        <label for="small">A Small Group</label>
+        <input type="radio" name="players" id="small" value="small">
+        <label for="big">A Big Group</label>
+        <input type="radio" name="players" id="big" value="big">
+      </fieldset>
+
+      <fieldset class="time">
+        <p>How much time you got?</p>
+        <label for="little">Not Much</label>
+        <input type="radio" name="time" id="little" value="little">
+        <label for="lot">Got all Night</label>
+        <input type="radio" name="time" id="lot" value="lot">
+      </fieldset>
+
+      <fieldset class="category">
+        <p>What kind of mood are you in?</p>
+        <label for="party">Just for Fun!</label>
+        <input type="radio" name="category" id="party" value="party">
+        <label for="strategy">I like thinking 10 steps ahead</label>
+        <input type="radio" name="category" id="strategy" value="strategy">
+      </fieldset>
+
+      <fieldset class="type">
+        <p>Work together or take all the glory</p>
+        <label for="team">All for one and one for all!</label>
+        <input type="radio" name="type" id="team" value="team">
+        <label for="individual">Many will enter but only one will emerge</label>
+        <input type="radio" name="type" id="individual" value="individual"> 
+      </fieldset>
+
+      <div class="submit-container">
+        <input type="submit" value="Give me a Boardgame!">
+      </div>
+    </form>
+
+    <section class="results">
+    </section>
+
+  </main>
+
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>
