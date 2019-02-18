@@ -563,19 +563,21 @@ const games = [
 const myGames = []
 
 
-myGames.handleSubmit = () => {
-  $('form').on('submit', (e) => {
-    e.preventDefault();
-  });
-}
+// myGames.handleSubmit = () => {
+//   $('form').on('submit', (e) => {
+//     e.preventDefault();
+//   });
+// }
 
-myGames.init = () => {
-  myGames.handleSubmit();
-}
+// myGames.init = () => {
+//   myGames.handleSubmit();
+// }
 
 
 $(function () {
-  myGames.init();
+  // myGames.init();
+  $('form').on('submit', (e) => {
+    e.preventDefault();
 
   const userPlayers = $('input[name=players]:checked').val();
   console.log(userPlayers);
@@ -645,6 +647,7 @@ $(function () {
 
    $('.results').html(`<h2 class = "choice">${gamesTypeArray[randomGame].title}</h2>`);
    
+  });
 });
 
 

@@ -4,15 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <title>Board Game's Night!</title>
 </head>
 <body>
   <header>
-    <h1>Board Game's Night!</h1>
+    <div class="wrapper">
+      <div class="title">
+        <h1>Let's play a game!</h1>
+        <p>An online quiz to help you find the perfect game for any occasion!</p>
+      </div>
+      <div class="start">
+        <a href="#section1">Start Quiz
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
   </header>
 
-  <main>
+
 
     <!-- <form action="">
       <p>How Many Players Do You Have?</p>
@@ -26,15 +39,23 @@
         <option value="100">More than 10</option>
       </select>
     </form> -->
-
+  <main>
     <form action="">
-      <fieldset class="players">
-        <p>How Many Players Do You Have?</p>
-        <label for="small">A Small Group</label>
-        <input type="radio" name="players" id="small" value="small">
-        <label for="big">A Big Group</label>
-        <input type="radio" name="players" id="big" value="big">
-      </fieldset>
+      <div class="player-section" id="section1">
+        <!-- <div class="wrapper"> -->
+          <div class="section-text">
+            <p class="question">Question 1</p>
+            <p>How Many Players Do You Have?</p>
+          </div>
+          <fieldset class="players">
+            <input type="radio" name="players" id="small" value="small">
+            <label for="small" class="left-question">2 to 4 Players</label>
+
+            <input type="radio" name="players" id="big" value="big">
+            <label for="big" class="right-question">More than 4 Players</label>
+          </fieldset>
+        <!-- </div> -->
+      </div>
 
       <fieldset class="time">
         <p>How much time you got?</p>
