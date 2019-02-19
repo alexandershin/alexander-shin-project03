@@ -625,13 +625,6 @@ $(function () {
   const userCategory = $('input[name=category]:checked').val();
   const userType = $('input[name=type]:checked').val();
 
-  const userGames = {
-    userGamesPlayers: userPlayers,
-    userGamesTime: userTime,
-    userGamesCategory: userCategory,
-    userGamesType: userType
-  };
-
   gamesPlayersArray = [];
   gamesTimeArray = [];
   gamesCategoryArray = [];
@@ -676,11 +669,10 @@ $(function () {
     }, 300);
     
     // Smooth Scroll from https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
-    
 
    $('.results').html(
      `<p class="results-text animated fadeIn delay-0.95s">Tonight, we\'re playing...</p>\
-     <h2 class = "choice animated fadeIn delay-1s">${gamesTypeArray[randomGame].title}</h2>\
+     <h2 class = "results-title animated fadeIn delay-1s">${gamesTypeArray[randomGame].title}</h2>\
      <img src="${gamesTypeArray[randomGame].image}" alt="${gamesTypeArray[randomGame].title}" class="results-picture animated fadeIn delay-1s">\
      <p class="fun animated fadeIn delay-1s">Have fun and play responsibly</p>\
      <div class="restart animated fadeIn delay-1s">\
@@ -689,7 +681,7 @@ $(function () {
         </a>
       </div>`
      );
-   
+
 
      
     });
