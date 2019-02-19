@@ -1,10 +1,13 @@
 //VARIABLE STYLES
 $primary: #0c5f4c; //Spruce
 $secondary: #063974; //Twilight blue
-$primary-background: #FAFAFA; //
-$secondary-background: #d2f9f1; //Light light blue
 $text: #2c2c2c; //Black
-$title: #50e3c2; // Greenish cyan
+
+
+$primary-background: #FAFAFA; //
+$secondary-background: #43005a; //
+$accent: #50e3c2; // Greenish cyan
+
 $primary-font: 'Roboto', sans-serif; //heading, body
 $secondary-font: 'Open Sans', sans-serif; //main heading, logo, nav
 
@@ -65,10 +68,10 @@ a {
     display: none;
   }
   &:hover {
-    color: $title;
+    color: $accent;
   }
   &:hover .fas {
-    color: $title;
+    color: $accent;
   }
 }
 
@@ -86,7 +89,7 @@ header {
     width: 33.33%;
     padding-top: 50px;
     h1 {
-      color: $title;
+      color: $accent;
       font-size: 5rem;
     }
     p {
@@ -113,46 +116,58 @@ header {
   }
 }
 
+// SECTION STYLES
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
 
-.player-section {
+.question-section {
   // background: url(../assets/background2.png); 
   height: 100vh;
-  background: 2px solid tomato;
-  p {
-  color: #43005a;
-  font-size: 3rem;
+  .question-number {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin:0;
+    color: #DC143C;
+  }
+  .question-statement {
+    color: $secondary-background;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 30px;
   }
 }
 
-.section-text {
-  height: 30vh;
-}
-
-// input radio box 
-.players {
+// RADIO BUTTON INPUT STYLES
+.question-input {
   border: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-
+  margin: 0;
+  padding: 0;
 }
 
 form label {
   display: inline-block;
-  padding: 180px;
+  padding: 150px;
   width: 100%;
   // border: 1px solid red;
 }
 
 form input:checked + label{
-  color: $title;
-  background: #43005a;
+  color: $accent;
+  background: $secondary-background;
   // padding: 200px 500px;
   width:100%;
 }
+
 
 // form input:last-of-type:checked + label{
 //   color: #DC143C;
@@ -160,11 +175,12 @@ form input:checked + label{
 // }
 
 .left-question {
-  background: $title;
-  color: #43005a;
+  background: $accent;
+  color: $secondary-background;
+  // border-radius: 5px;
   transition: all 0.3s;
   &:hover {
-    color: $title;
+    color: $accent;
     background: #43005a;
   }
 }
@@ -172,20 +188,80 @@ form input:checked + label{
 .right-question {
   background: #DC143C;
   color: #FFE4E1;
+  // border-radius: 5px;
   transition: all 0.3s;
   &:hover {
-    color: $title;
-    background: #43005a;
+    color: $accent;
+    background: $secondary-background;
     // color: #DC143C;
     // background: #FFE4E1;
   }
 }
 
-input[type="radio"] {
-  // background: $title;
-  // display: none;
-  // width: 50%;
-  opacity: 0;
-  position: absolute;
+// NEXT BUTTON STYLES
+.next {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  // display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  // padding-bottom: 50px;
+  a {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $secondary-background;
+    background: $accent;
+    letter-spacing: 3px;
+    // border-radius: 5px;
+    padding: 15px 30px;
+    &:hover {
+    color: $accent;
+    background: $secondary-background;
+    }
+    &:hover .fas {
+    color: $accent;
+    background: $secondary-background;
+    }
+    i {
+    font-size: 2rem;
+    letter-spacing: 7px;
+    line-height: 1.4;
+    color: $secondary-background;
+    background: $accent;
+    transition: all 0.3s;
+    }
+  }
 }
 
+// SUBMIT BUTTON STYLES
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  // display: inline-block;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  input[type="submit"] {
+     display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $secondary-background;
+    background: $accent;
+    border: 2px solid $accent;
+    padding: 15px 30px;
+    &:hover {
+    color: $accent;
+    background: $secondary-background;
+    border: 2px solid $secondary-background;
+    }
+    &:hover .fas {
+    color: $accent;
+    background: $secondary-background;
+    }
+  }
+
+}

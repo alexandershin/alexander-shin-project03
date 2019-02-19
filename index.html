@@ -25,68 +25,82 @@
     </div>
   </header>
 
-
-
-    <!-- <form action="">
-      <p>How Many Players Do You Have?</p>
-      <select name="players">
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4" selected>4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="10">Up to 10</option>
-        <option value="100">More than 10</option>
-      </select>
-    </form> -->
   <main>
     <form action="">
-      <div class="player-section" id="section1">
-        <!-- <div class="wrapper"> -->
-          <div class="section-text">
-            <p class="question">Question 1</p>
-            <p>How Many Players Do You Have?</p>
-          </div>
-          <fieldset class="players">
-            <input type="radio" name="players" id="small" value="small">
-            <label for="small" class="left-question">2 to 4 Players</label>
+      <!-- QUESTION 1 - PLAYERS SECTION STARTS -->
+      <div class="question-section" id="section1">
+        <p class="question-number">Question 1</p>
+        <p class="question-statement">How many players do you have?</p>
+        <fieldset class="question-input">
+          <input type="radio" name="players" id="small" value="small">
+          <label for="small" class="left-question">2 to 4 Players</label>
 
-            <input type="radio" name="players" id="big" value="big">
-            <label for="big" class="right-question">More than 4 Players</label>
-          </fieldset>
-        <!-- </div> -->
+          <input type="radio" name="players" id="big" value="big">
+          <label for="big" class="right-question">More than 4 Players</label>
+        </fieldset>
+        <div class="next">
+          <a href="#section2">Next
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+      <!-- QUESTION 1 - PLAYERS SECTION ENDS  -->
+
+      <div class="question-section" id="section2">
+        <p class="question-number">Question 2</p>
+        <p class="question-statement">How much time do you have?</p>
+        <fieldset class="question-input">
+          <input type="radio" name="time" id="little" value="little">
+          <label for="little" class="left-question">Quick 'n dirty 30 minutes</label>
+          <input type="radio" name="time" id="lot" value="lot">
+          <label for="lot" class="right-question">We got all night</label>
+        </fieldset>
+        <div class="next">
+          <a href="#section3">Next
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       </div>
 
-      <fieldset class="time">
-        <p>How much time you got?</p>
-        <label for="little">Not Much</label>
-        <input type="radio" name="time" id="little" value="little">
-        <label for="lot">Got all Night</label>
-        <input type="radio" name="time" id="lot" value="lot">
-      </fieldset>
+      <div class="question-section" id="section3">
+        <p class="question-number">Question 3</p>
+        <p class="question-statement">What kind of mood are you in?</p>
+        <fieldset class="question-input">
+          <input type="radio" name="category" id="party" value="party">
+          <label for="party" class="left-question">Just for fun!</label>
+          <input type="radio" name="category" id="strategy" value="strategy">          
+          <label for="strategy" class="right-question">I'm 10 steps ahead</label>
+        </fieldset>
+        <div class="next">
+          <a href="#section4">Next
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
 
-      <fieldset class="category">
-        <p>What kind of mood are you in?</p>
-        <label for="party">Just for Fun!</label>
-        <input type="radio" name="category" id="party" value="party">
-        <label for="strategy">I like thinking 10 steps ahead</label>
-        <input type="radio" name="category" id="strategy" value="strategy">
-      </fieldset>
-
-      <fieldset class="type">
-        <p>Work together or take all the glory</p>
-        <label for="team">All for one and one for all!</label>
-        <input type="radio" name="type" id="team" value="team">
-        <label for="individual">Many will enter but only one will emerge</label>
-        <input type="radio" name="type" id="individual" value="individual"> 
-      </fieldset>
-
-      <div class="submit-container">
-        <input type="submit" value="Give me a Boardgame!">
+      <div class="question-section" id="section4">
+        <p class="question-number">Question 4</p>
+        <p class="question-statement">Work together or take all the glory?</p>     
+        <fieldset class="question-input">
+          <input type="radio" name="type" id="team" value="team">
+          <label for="team" class="left-question">Better together!</label>
+          <input type="radio" name="type" id="individual" value="individual"> 
+          <label for="individual" class="right-question">One ring to rule them all</label>
+        </fieldset>
+        <!-- <div class="next">
+          <a href="#section5">Next
+            <i class="fas fa-chevron-right"></i>
+          </a> -->
+          <!-- SUBMIT BUTTON STARTS -->
+        <div class="submit-container">
+          <input type="submit" value="What are we playing?">
+        </div>
+        <!-- SUBMIT BUTTON ENDS -->
+        </div>
       </div>
     </form>
 
-    <section class="results">
+    <section class="question-section results">
     </section>
 
   </main>
