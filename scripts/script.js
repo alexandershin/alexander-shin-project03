@@ -9,7 +9,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5'
+    players: '2-5',
+    image: 'assets/exploding-kittens.png'
   },
   {
     title: 'Splendor',
@@ -20,7 +21,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '4',
     value2: 'small',
-    players: '2-4'
+    players: '2-4',
+    image: 'assets/splendor.jpg'
   },
   {
     title: 'Catan',
@@ -31,7 +33,8 @@ const games = [
     minPlayers: '3',
     maxPlayers: '4',
     value2: 'small',
-    players: '3-4 Players'
+    players: '3-4 Players',
+    image: 'assets/catan.jpg'
   },
   {
     title: 'Ticket to Ride',
@@ -42,18 +45,21 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/ticket.jpg'
   },
   {
-    title: 'Love Letter',
+    title: 'Love Letter Premium',
     time: 'little',
     duration: '20 Min',
     category: 'strategy',
     type: 'individual',
     minPlayers: '2',
-    maxPlayers: '4',
+    maxPlayers: '8',
+    value1: 'big',
     value2: 'small',
-    players: '2-4 Players'
+    players: '2-8 Players',
+    image: 'assets/love-letter.jpg'
   },
   {
     title: 'Agricola',
@@ -64,7 +70,8 @@ const games = [
     minPlayers: '1',
     maxPlayers: '5',
     value2: 'small',
-    players: '1-5 Players'
+    players: '1-5 Players',
+    image: 'assets/agricola.jpg'
   },
   {
     title: 'DC Comics Deck-Building Game',
@@ -75,7 +82,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/dc.png'
   },
   {
     title: 'Sheriff of Nottingham',
@@ -86,7 +94,8 @@ const games = [
     minPlayers: '3',
     maxPlayers: '5',
     value2: 'small',
-    players: '3-5 Players'
+    players: '3-5 Players',
+    image: 'assets/sheriff.jpg'
   },
   {
     title: 'Century: Golem Edition',
@@ -97,7 +106,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/century.jpg'
   },
   {
     title: 'Tokaido',
@@ -108,7 +118,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/tokaido.png'
   },
   {
     title: 'Pandemic',
@@ -119,7 +130,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '4',
     value2: 'small',
-    players: '2-4 Players'
+    players: '2-4 Players',
+    image: 'assets/pandemic.jpg'
   },
   {
     title: 'Forbidden Island',
@@ -130,7 +142,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '4',
     value2: 'small',
-    players: '2-4 Players'
+    players: '2-4 Players',
+    image: 'assets/forbidden-island.jpg'
   },
   {
     title: 'Forbidden Desert',
@@ -141,7 +154,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/forbidden-desert.jpg'
   },
   {
     title: 'Patchwork',
@@ -152,7 +166,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '2',
     value2: 'small',
-    players: '2 Players'
+    players: '2 Players',
+    image: 'assets/patchwork.jpg'
   },
   {
     title: 'Dixit',
@@ -164,7 +179,8 @@ const games = [
     maxPlayers: '6',
     value1: 'big',
     value2: 'small',
-    players: '3-6 Players'
+    players: '3-6 Players',
+    image: 'assets/dixit.jpg'
   },
   {
     title: 'Ghost Blitz',
@@ -176,7 +192,8 @@ const games = [
     maxPlayers: '8',
     value1: 'big',
     value2: 'small',
-    players: '2-8 Players'
+    players: '2-8 Players',
+    image: 'assets/ghost-blitz.jpg'
   },
   {
     title: 'Bandu',
@@ -188,7 +205,8 @@ const games = [
     maxPlayers: '8',
     value1: 'big',
     value2: 'small',
-    players: '2-8 Players'
+    players: '2-8 Players',
+    image: 'assets/bandu.jpg'
   },
   {
     title: 'Coup',
@@ -200,7 +218,8 @@ const games = [
     maxPlayers: '6',
     value1: 'big',
     value2: 'small',
-    players: '2-6 Players'
+    players: '2-6 Players',
+    image: 'assets/coup.jpg'
   },
   {
     title: 'Dead of Winter',
@@ -211,7 +230,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/dead-of-winter.jpg'
   },
   {
     title: 'Cosmic Encounter',
@@ -222,7 +242,8 @@ const games = [
     minPlayers: '3',
     maxPlayers: '5',
     value2: 'small',
-    players: '3-5 Players'
+    players: '3-5 Players',
+    image: 'assets/cosmic-encounter.jpg'
   },
   {
     title: 'Dominion',
@@ -233,7 +254,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '4',
     value2: 'small',
-    players: '2-4 Players'
+    players: '2-4 Players',
+    image: 'assets/dominion.jpg'
   },
   {
     title: 'Codenames',
@@ -245,7 +267,8 @@ const games = [
     maxPlayers: '8',
     value1: 'big',
     value2: 'small',
-    players: '2-8 Players'
+    players: '2-8 Players',
+    image: 'assets/codenames.jpg'
   },
   {
     title: 'Telestrations',
@@ -256,7 +279,8 @@ const games = [
     minPlayers: '4',
     maxPlayers: '8',
     value1: 'big',
-    players: '4-8 Players'
+    players: '4-8 Players',
+    image: 'assets/telestrations.jpg'
   },
   {
     title: 'The Resistance: Avalon',
@@ -268,7 +292,8 @@ const games = [
     maxPlayers: '10',
     value1: 'big',
     value2: 'small',
-    players: '5-10 Players'
+    players: '5-10 Players',
+    image: 'assets/avalon.jpg'
   },
   {
     title: 'The Resistance',
@@ -280,7 +305,8 @@ const games = [
     maxPlayers: '10',
     value1: 'big',
     value2: 'small',
-    players: '5-10 Players'
+    players: '5-10 Players',
+    image: 'assets/resistance.jpg'
   },
   {
     title: 'Hanabi',
@@ -291,7 +317,8 @@ const games = [
     minPlayers: '2',
     maxPlayers: '5',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/hanabi.jpg'
   },
   {
     title: 'Pantone',
@@ -303,7 +330,8 @@ const games = [
     maxPlayers: '20',
     value1: 'big',
     value2: 'small',
-    players: '2-20 Players'
+    players: '2-20 Players',
+    image: 'assets/pantone.jpg'
   },
   {
     title: '7 Wonders',
@@ -315,7 +343,8 @@ const games = [
     maxPlayers: '7',
     value1: 'big',
     value2: 'small',
-    players: '2-7 Players'
+    players: '2-7 Players',
+    image: 'assets/7-wonders.jpg'
   },
   {
     title: 'Sushi Go Party!',
@@ -327,7 +356,8 @@ const games = [
     maxPlayers: '8',
     value1: 'big',
     value2: 'small',
-    players: '2-8 Players'
+    players: '2-8 Players',
+    image: 'assets/sushi.jpg'
   },
   {
     title: 'Time\'s Up! Title Recall!',
@@ -338,7 +368,8 @@ const games = [
     minPlayers: '4',
     maxPlayers: '18',
     value1: 'big',
-    players: '4-18 Players'
+    players: '4-18 Players',
+    image: 'assets/times-up.jpg'
   },
   {
     title: 'Captain Sonar',
@@ -350,7 +381,8 @@ const games = [
     maxPlayers: '8',
     value1: 'big',
     value2: 'small',
-    players: '2-8 Players'
+    players: '2-8 Players',
+    image: 'assets/captain-sonar.png'
   },
   {
     title: 'Two Rooms and a Boom',
@@ -361,7 +393,8 @@ const games = [
     minPlayers: '6',
     maxPlayers: '30',
     value1: 'big',
-    players: '6-30 Players'
+    players: '6-30 Players',
+    image: 'assets/two-rooms.png'
   },
   {
     title: 'Secret Hitler',
@@ -373,7 +406,8 @@ const games = [
     maxPlayers: '10',
     value1: 'big',
     value2: 'small',
-    players: '5-10 Players'
+    players: '5-10 Players',
+    image: 'assets/secret-hitler.png'
   },
   {
     title: 'Spyfall',
@@ -385,7 +419,8 @@ const games = [
     maxPlayers: '8',
     value1: 'big',
     value2: 'small',
-    players: '3-8 Players'
+    players: '3-8 Players',
+    image: 'assets/spyfall.jpg'
   },
   {
     title: 'One Night Ultimate Werewolf',
@@ -397,7 +432,8 @@ const games = [
     maxPlayers: '10',
     value1: 'big',
     value2: 'small',
-    players: '3-10 Players'
+    players: '3-10 Players',
+    image: 'assets/one-night-ultimate.jpg'
   },
   {
     title: 'Small World',
@@ -406,7 +442,8 @@ const games = [
     category: 'strategy',
     type: 'individual',
     value2: 'small',
-    players: '2-5 Players'
+    players: '2-5 Players',
+    image: 'assets/small-world.jpg'
   },
   {
     title: 'Deception: Murder in Hong Kong',
@@ -416,7 +453,8 @@ const games = [
     type: 'team',
     value1: 'big',
     value2: 'small',
-    players: '4-12 Players'
+    players: '4-12 Players',
+    image: 'assets/deception.jpg'
   },
   {
     title: 'Caverna: The Cave Farmers',
@@ -426,7 +464,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '1-7 Players'
+    players: '1-7 Players',
+    image: 'assets/caverna.jpg'
   },
   {
     title: 'Power Grid',
@@ -436,7 +475,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '2-6 Players'
+    players: '2-6 Players',
+    image: 'assets/power-grid.jpg'
   },
   {
     title: 'Arkham Horror',
@@ -446,7 +486,8 @@ const games = [
     type: 'team',
     value1: 'big',
     value2: 'small',
-    players: '1-8 Players'
+    players: '1-8 Players',
+    image: 'assets/arkham-horror.jpg'
   },
   {
     title: 'Eldritch Horror',
@@ -456,7 +497,8 @@ const games = [
     type: 'team',
     value1: 'big',
     value2: 'small',
-    players: '1-8 Players'
+    players: '1-8 Players',
+    image: 'assets/eldritch-horror.jpg'
   },
   {
     title: 'Bananagrams',
@@ -466,7 +508,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '1-8 Players'
+    players: '1-8 Players',
+    image: 'assets/bananagrams.jpg'
   },
   {
     title: 'BANG!',
@@ -476,7 +519,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '4-7 Players'
+    players: '4-7 Players',
+    image: 'assets/bang.jpg'
   },
   {
     title: 'Bohnanza',
@@ -486,7 +530,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '2-7 Players'
+    players: '2-7 Players',
+    image: 'assets/bohnanza.jpg'
   },
   {
     title: 'Junk Art',
@@ -496,7 +541,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '2-6 Players'
+    players: '2-6 Players',
+    image: 'assets/junk-art.jpg'
   },
   {
     title: 'Cranium',
@@ -506,7 +552,8 @@ const games = [
     type: 'team',
     value1: 'big',
     value2: 'small',
-    players: '4-16 Players'
+    players: '4-16 Players',
+    image: 'assets/cranium.jpg'
   },
   {
     title: 'Balderdash',
@@ -516,7 +563,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '2-6 Players'
+    players: '2-6 Players',
+    image: 'assets/balderdash.jpg'
   },
   {
     title: 'Mad Gab',
@@ -526,7 +574,8 @@ const games = [
     type: 'team',
     value1: 'big',
     value2: 'small',
-    players: '2-12 Players'
+    players: '2-12 Players',
+    image: 'assets/madgab.jpg'
   },
   {
     title: 'Anomia: Party Edition',
@@ -536,7 +585,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '3-6 Players'
+    players: '3-6 Players',
+    image: 'assets/anomia.jpg'
   },
   {
     title: 'Lift it!',
@@ -546,7 +596,8 @@ const games = [
     type: 'individual',
     value1: 'big',
     value2: 'small',
-    players: '1-8 Players'
+    players: '1-8 Players',
+    image: 'assets/lift-it.jpg'
   },
   {
     title: 'Shadows over Camelot',
@@ -556,38 +607,23 @@ const games = [
     type: 'team',
     value1: 'big',
     value2: 'small',
-    players: '3-7 Players'
+    players: '3-7 Players',
+    image: 'assets/shadows.jpg'
   },
 ];
 
+// All images from https://boardgamegeek.com/ and https://www.boardgamebliss.com/products/bausack?variant=437880729
+
 const myGames = []
 
-
-// myGames.handleSubmit = () => {
-//   $('form').on('submit', (e) => {
-//     e.preventDefault();
-//   });
-// }
-
-// myGames.init = () => {
-//   myGames.handleSubmit();
-// }
-
-
 $(function () {
-  // myGames.init();
   $('form').on('submit', (e) => {
     e.preventDefault();
 
   const userPlayers = $('input[name=players]:checked').val();
-  console.log(userPlayers);
   const userTime = $('input[name=time]:checked').val();
-  console.log(userTime);
   const userCategory = $('input[name=category]:checked').val();
-  console.log(userCategory);
   const userType = $('input[name=type]:checked').val();
-  console.log(userType);
-
 
   const userGames = {
     userGamesPlayers: userPlayers,
@@ -600,7 +636,7 @@ $(function () {
   gamesTimeArray = [];
   gamesCategoryArray = [];
   gamesTypeArray = [];
-
+// collect user inputs and filter through each array
 
   for (let i = 0; i < games.length; i++) {
     let currentGame = games[i];
@@ -633,29 +669,35 @@ $(function () {
       console.log(currentGame);
     }
   }
-
-  // const randomGameArray = (array) => {
-  //   const randomGame = Math.floor(Math.random() * array.length);
-  //   return array[randomGame];
-  // }
-
     const randomGame = Math.floor(Math.random() * gamesTypeArray.length);
-    // return array[randomGame];
   
+    $('html, body').animate({
+        scrollTop: $("#section6").offset().top
+    }, 300);
+    
+    // Smooth Scroll from https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
+    
 
-  // let finalGame = randomGameArray(gamesTypeArray);
-
-   $('.results').html(`<h2 class = "choice">${gamesTypeArray[randomGame].title}</h2>`);
+   $('.results').html(
+     `<p class="results-text animated fadeIn delay-0.95s">Tonight, we\'re playing...</p>\
+     <h2 class = "choice animated fadeIn delay-1s">${gamesTypeArray[randomGame].title}</h2>\
+     <img src="${gamesTypeArray[randomGame].image}" alt="${gamesTypeArray[randomGame].title}" class="results-picture animated fadeIn delay-1s">\
+     <p class="fun animated fadeIn delay-1s">Have fun and play responsibly</p>\
+     <div class="restart animated fadeIn delay-1s">\
+        <a href="">Choose another game!
+          <i class="fas fa-chevron-right"></i>\
+        </a>
+      </div>`
+     );
    
-  });
+
+     
+    });
+    $('.restart').on('click', function() {
+        location.reload();
+      $('html,body').scrollTop(0);
+    });
+        
 });
-
-
-  
-
- 
-// -need to have user player choice value match value of games min player value
-// - new array of min player categories
-// - from new array narrow down by user time choice, category and type
 
 

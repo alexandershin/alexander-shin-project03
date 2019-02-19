@@ -1,24 +1,10 @@
 //VARIABLE STYLES
-$primary: #0c5f4c; //Spruce
-$secondary: #063974; //Twilight blue
-$text: #2c2c2c; //Black
-
-
 $primary-background: #FAFAFA; //
 $secondary-background: #43005a; //
 $accent: #50e3c2; // Greenish cyan
-
 $primary-font: 'Roboto', sans-serif; //heading, body
-$secondary-font: 'Open Sans', sans-serif; //main heading, logo, nav
+$secondary-font: 'Open Sans', sans-serif; //buttons
 
-
-// MIXIN STYLES
-@mixin headers($color, $font-value, $size-value, $size-weight) {
-  color: $color;
-  font-family: $font-value;
-  font-size: $size-value;
-  font-weight: $size-weight;
-}
 
 //BASE STYLES
 html {
@@ -53,7 +39,6 @@ p {
   font-family: $primary-font;
   font-weight: 400;
   line-height: 1.6;
-  // letter-spacing: 2px;
 }
 
 a {
@@ -66,6 +51,9 @@ a {
   transition: all 0.3s;
   &:visited {
     display: none;
+  }
+  &:focus {
+    border: 5px solid navy;
   }
   &:hover {
     color: $accent;
@@ -81,20 +69,23 @@ a {
   width: 90%;
 }
 
+// HEADER STYLES
 header {
   background: url(../assets/background1.png) no-repeat center;
   background-size: cover;
   height: 100vh;
   .title {
-    width: 33.33%;
-    padding-top: 50px;
+    width: 50%;
+    padding-top: 80px;
     h1 {
       color: $accent;
-      font-size: 5rem;
+      font-size: 7rem;
+      line-height: .9;
     }
     p {
       font-size: 1.4rem;
       font-weight: 100;
+      padding-top: 50px;
     }
   }
 }
@@ -103,11 +94,19 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
+  padding-top:100px;
+  .fas {
+    font-size: 3rem;
+    letter-spacing: 7px;
+    line-height: 1.4;
+    color: $primary-background;
+  }
   a {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding-left: 10px;
     letter-spacing: 7px;
     i {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 7px;
     line-height: 1.4;
     color: $primary-background;
@@ -123,21 +122,22 @@ input[type="radio"] {
 }
 
 .question-section {
-  // background: url(../assets/background2.png); 
   height: 100vh;
   .question-number {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin:0;
     color: #DC143C;
+    padding-top: 40px;
   }
   .question-statement {
     color: $secondary-background;
     font-size: 4rem;
     font-weight: 700;
+    line-height: 80px;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -147,54 +147,35 @@ input[type="radio"] {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 3.5rem;
+  font-size: 3rem;  
   font-weight: 700;
   text-align: center;
   margin: 0;
   padding: 0;
+  input:checked + label {
+    color: $accent;
+    background: $secondary-background;
+    // padding: 200px 500px;
+    // border: 20px solid $accent;
+    // width: 150%;
+  }
 }
 
 form label {
   display: inline-block;
   padding: 150px;
   width: 100%;
-  // border: 1px solid red;
 }
 
-form input:checked + label{
-  color: $accent;
-  background: $secondary-background;
-  // padding: 200px 500px;
-  width:100%;
-}
-
-
-// form input:last-of-type:checked + label{
-//   color: #DC143C;
-//   background: #FFE4E1;
-// }
-
-.left-question {
+.question-box, {
   background: $accent;
   color: $secondary-background;
-  // border-radius: 5px;
-  transition: all 0.3s;
-  &:hover {
-    color: $accent;
-    background: #43005a;
-  }
-}
-
-.right-question {
-  background: #DC143C;
-  color: #FFE4E1;
+  border: 2px solid $secondary-background;
   // border-radius: 5px;
   transition: all 0.3s;
   &:hover {
     color: $accent;
     background: $secondary-background;
-    // color: #DC143C;
-    // background: #FFE4E1;
   }
 }
 
@@ -203,7 +184,6 @@ form input:checked + label{
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
-  // display: inline-block;
   font-size: 4rem;
   font-weight: 700;
   margin: 0;
@@ -214,8 +194,7 @@ form input:checked + label{
     font-weight: 700;
     color: $secondary-background;
     background: $accent;
-    letter-spacing: 3px;
-    // border-radius: 5px;
+    // letter-spacing: 3px;
     padding: 15px 30px;
     &:hover {
     color: $accent;
@@ -237,31 +216,101 @@ form input:checked + label{
 }
 
 // SUBMIT BUTTON STYLES
-.submit-container {
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
-  // display: inline-block;
-  font-size: 4rem;
+input[type="submit"] {
+  display: inline-block;
+  font-family: $secondary-font;
+  font-size: 2rem;
   font-weight: 700;
+  color: $secondary-background;
+  background: $accent;
+  border: 2px solid $accent;
+  padding: 15px 30px;
+  transition: all 0.3s;
+  &:hover {
+    color: $accent;
+    background: $secondary-background;
+    border: 2px solid $secondary-background;
+  }
+  &:focus {
+    border: 5px solid navy;
+  }
+}
+
+.results-section {
+  background: url(../assets/background1.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.results-text {
+  color: $primary-background;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
   margin: 0;
-  input[type="submit"] {
-     display: inline-block;
-    font-size: 2rem;
+  text-align: center;
+  padding-top: 80px;
+  // font-size: 4rem;
+  // font-weight: 700;
+  // margin: 0;
+}
+.results-picture {
+  width: 30vh;
+  // height: 25vh;
+  margin: 0 auto;
+}
+
+.choice {
+  color: $primary-background;
+  color: $accent;
+  font-size: 4rem;
+  line-height: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  // letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.fun {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end
+}
+
+
+.restart {
+  display: flex;
+  font-weight: 700;
+  a {
+    margin: 0 auto;
+    font-size: 1rem;
     font-weight: 700;
     color: $secondary-background;
     background: $accent;
-    border: 2px solid $accent;
+    letter-spacing: 3px;
     padding: 15px 30px;
     &:hover {
     color: $accent;
     background: $secondary-background;
-    border: 2px solid $secondary-background;
     }
     &:hover .fas {
     color: $accent;
     background: $secondary-background;
     }
+    i {
+    font-size: 1rem;
+    letter-spacing: 7px;
+    line-height: 1.4;
+    color: $secondary-background;
+    background: $accent;
+    transition: all 0.3s;
+    }
   }
+}
+
+@media(min-width:500px) {
 
 }
+

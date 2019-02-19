@@ -7,17 +7,20 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Board Game's Night!</title>
 </head>
 <body>
   <header>
     <div class="wrapper">
-      <div class="title">
+      <div class="title" id="section0">
         <h1>Let's play a game!</h1>
-        <p>An online quiz to help you find the perfect game for any occasion!</p>
+        <p>An online quiz to help you find the <br>perfect game for any occasion!</p>
       </div>
+
       <div class="start">
+        <i class="fas fa-dice-six animated wobble infinite"></i>
         <a href="#section1">Start Quiz
           <i class="fas fa-chevron-right"></i>
         </a>
@@ -29,15 +32,19 @@
     <form action="">
       <!-- QUESTION 1 - PLAYERS SECTION STARTS -->
       <div class="question-section" id="section1">
-        <p class="question-number">Question 1</p>
-        <p class="question-statement">How many players do you have?</p>
+        <div class="wrapper">
+          <p class="question-number">Question 1</p>
+          <p class="question-statement">How many players do you have?</p>
+        </div>
+
         <fieldset class="question-input">
           <input type="radio" name="players" id="small" value="small">
-          <label for="small" class="left-question">2 to 4 Players</label>
+          <label for="small" class="question-box">2 to 4 players</label>
 
           <input type="radio" name="players" id="big" value="big">
-          <label for="big" class="right-question">More than 4 Players</label>
+          <label for="big" class="question-box">More than 4 players</label>
         </fieldset>
+
         <div class="next">
           <a href="#section2">Next
             <i class="fas fa-chevron-right"></i>
@@ -46,63 +53,83 @@
       </div>
       <!-- QUESTION 1 - PLAYERS SECTION ENDS  -->
 
+      <!-- QUESTION 2 - TIME SECTION STARTS -->
       <div class="question-section" id="section2">
-        <p class="question-number">Question 2</p>
-        <p class="question-statement">How much time do you have?</p>
+        <div class="wrapper">
+          <p class="question-number">Question 2</p>
+          <p class="question-statement">How much time do you have?</p>
+        </div>
+
         <fieldset class="question-input">
           <input type="radio" name="time" id="little" value="little">
-          <label for="little" class="left-question">Quick 'n dirty 30 minutes</label>
+          <label for="little" class="question-box">Quick 'n dirty 30 minutes</label>
+
           <input type="radio" name="time" id="lot" value="lot">
-          <label for="lot" class="right-question">We got all night</label>
+          <label for="lot" class="question-box">We got all night</label>
         </fieldset>
+
         <div class="next">
           <a href="#section3">Next
             <i class="fas fa-chevron-right"></i>
           </a>
         </div>
       </div>
+      <!-- QUESTION 2 - TIME SECTION ENDS -->
 
+      <!-- QUESTION 3 - CATEGORY SECTION STARTS -->
       <div class="question-section" id="section3">
-        <p class="question-number">Question 3</p>
-        <p class="question-statement">What kind of mood are you in?</p>
+        <div class="wrapper">
+          <p class="question-number">Question 3</p>
+          <p class="question-statement">What kind of mood are you in?</p>
+        </div>
+
         <fieldset class="question-input">
           <input type="radio" name="category" id="party" value="party">
-          <label for="party" class="left-question">Just for fun!</label>
+          <label for="party" class="question-box">Just for fun!</label>
+
           <input type="radio" name="category" id="strategy" value="strategy">          
-          <label for="strategy" class="right-question">I'm 10 steps ahead</label>
+          <label for="strategy" class="question-box">I'm all about points</label>
         </fieldset>
+        
         <div class="next">
           <a href="#section4">Next
             <i class="fas fa-chevron-right"></i>
           </a>
         </div>
       </div>
+      <!-- QUESTION 3 - CATEGORY SECTION ENDS -->
 
+      <!-- QUESTION 4 - TYPE SECTION STARTS -->
       <div class="question-section" id="section4">
-        <p class="question-number">Question 4</p>
-        <p class="question-statement">Work together or take all the glory?</p>     
+        <div class="wrapper">
+          <p class="question-number">Question 4</p>
+          <p class="question-statement">Work together or take all the glory?</p>     
+        </div>
+
         <fieldset class="question-input">
           <input type="radio" name="type" id="team" value="team">
-          <label for="team" class="left-question">Better together!</label>
+          <label for="team" class="question-box">Better together!</label>
+
           <input type="radio" name="type" id="individual" value="individual"> 
-          <label for="individual" class="right-question">One ring to rule them all</label>
+          <label for="individual" class="question-box">One ring to rule them all</label>
         </fieldset>
-        <!-- <div class="next">
-          <a href="#section5">Next
-            <i class="fas fa-chevron-right"></i>
-          </a> -->
-          <!-- SUBMIT BUTTON STARTS -->
-        <div class="submit-container">
-          <input type="submit" value="What are we playing?">
+        <!-- QUESTION 4 - TYPE SECTION ENDS -->
+
+        <!-- SUBMIT BUTTON STARTS -->
+        <div class="next">
+          <input type="submit" value="What are we playing?" class="section5">
         </div>
         <!-- SUBMIT BUTTON ENDS -->
         </div>
       </div>
     </form>
 
-    <section class="question-section results">
+    <!-- FINAL GAME RESULT STARTS -->
+    <section class="results-section" id="section6">
+      <div class="wrapper results">
+      </div>
     </section>
-
+    <!-- FINAL GAME RESULT ENDS -->
   </main>
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
