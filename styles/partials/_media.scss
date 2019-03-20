@@ -8,6 +8,18 @@
     }
   }
 
+  .start {
+    // justify-content: flex-start;
+    // padding-top:50px;
+    .fas {
+      font-size: 2.5rem;
+    }
+    a {
+      font-size: 2.5rem;
+      padding-left: 10px;
+    }
+  }
+
   .question-section {
     .question-statement {
       color: $secondary-background;
@@ -55,7 +67,7 @@
 @media(max-width:1137px) {
   
    .start {
-    padding-top: 120px;
+    // padding-top: 120px;
    }
 
     .question-statement {
@@ -69,6 +81,7 @@
 
 @media(max-width:1067px) {
   .question-section {
+    // height:90vh;
     .question-statement {
       font-size: 2.5rem;
     }
@@ -84,23 +97,23 @@
   header {
     background: url(../assets/background1.png) no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     .title {
       width: 100%;
       padding-top: 40px;
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding-top: 50px;
       }
     }
   }
 
   .start {
-    justify-content: flex-start;
-    padding-top:50px;
+    // justify-content: flex-start;
+    padding-top:120px;
     .fas {
       font-size: 2rem;
       }
@@ -111,6 +124,7 @@
   }
 
   .question-section {
+    height:80vh;
     .question-number {
       font-size: 1rem;
     }
@@ -124,7 +138,7 @@
 
   .question-input {
     border: none;
-    display: block;
+    flex-direction: column;
     width: 100%;
     font-size: 2rem;  
   }
@@ -154,27 +168,158 @@
   .choice {
     font-size: 3rem;
   }
-  .restart {
-    a {
-      font-size: 1rem;
-    }
+
+  .restart a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .section5 {
+    margin-bottom:20px;
   }
 }
 
 @media(max-width:716px) {
+  header {
+    height: 60vh;
+  }
+
+  header .title h1 {
+    font-size: 3.5rem;
+  }
+
   form label {
     padding: 80px;
   }
+
+  .start {
+    padding-top:50px;
+    .fas {
+      font-size: 1.5rem;
+      }
+    a {
+      font-size: 1.5rem;
+      }
+  }
+  .next {
+    a {
+      font-size: .9rem;
+      i {
+        font-size: .9rem;
+      }
+    }
+  }
+
+
 }
 
 @media(max-width:463px) {
+
+  header .title p {
+    font-size: 1rem;
+  }
+
+  .question-section {
+    height: 60vh;
+    margin-top: 100px;
+    .question-number {
+      font-size: .8rem;
+    }
+    .question-statement {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      padding-bottom: 25px;
+    }
+  }
+
+  .question-input {
+    font-size: 1rem;  
+  }
+
   form label {
     padding: 60px;
+  }
+    .start {
+    padding-top:50px;
+    .fas {
+      font-size: 1.2rem;
+    }
+    a {
+      font-size: 1.2rem;
+    }
+  }
+  .next {
+    a {
+      font-size: .8rem;
+      i {
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .results-text {
+    font-size: .9rem;
+  }
+
+  .results-title {
+    font-size: 2rem;
+  }
+
+  .fun {
+    font-size: .8rem;
+  }
+
+  .restart a {
+    padding: 5px 15px;
+    font-size: .6rem;
+  }
+
+  .restart a i {
+    font-size: .6rem;
+  }
+
+  .results {
+    margin-top:50px;
   }
 }
 
 @media(max-width:382px) {
+  
+  header .title h1 {
+    font-size: 2rem;
+  }
+
+  header .title p {
+    font-size: 0.8rem;
+    padding-top: 0;
+  }
+
+  .start {
+    padding-top: 40px;
+    .fas {
+      font-size: 1rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .question-section {
+    height:50vh;
+  }
+  
   form label {
     padding: 40px;
+  }
+  .results {
+    margin-top:80px;
+  }
+}
+
+@media(max-width:325px) {
+ .question-section {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    height:50vh;
   }
 }

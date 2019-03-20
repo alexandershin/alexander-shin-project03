@@ -620,6 +620,33 @@ $(function () {
   $('form').on('submit', (e) => {
     e.preventDefault();
 
+    // Only allow submit if all questions are answered
+    let all_answered = true;
+    $('input:radio').each(function () {
+      let name = $(this).attr('name');
+      if ($(`input:radio[name='${name}']:checked`).length === 0) {
+        all_answered = false;
+      }
+    });
+    if (all_answered === false) {
+      // alert('Not so fast! Please answer all questions to see your final game.');
+      Swal.fire({
+        type: 'error',
+        title: 'Oops...',
+        text:
+          'Not so fast! Please answer all questions to see your final game.'
+      });
+    }
+    // Only show results area if all questions are answered
+    if (all_answered === true) {
+      $('.results-section').removeClass('hide');
+      // then animate to bottom for results
+      $('html, body').animate({
+        scrollTop: $("#section6").offset().top
+      }, 300);
+    }
+
+
   const userPlayers = $('input[name=players]:checked').val();
   const userTime = $('input[name=time]:checked').val();
   const userCategory = $('input[name=category]:checked').val();
@@ -629,6 +656,40 @@ $(function () {
   gamesTimeArray = [];
   gamesCategoryArray = [];
   gamesTypeArray = [];
+
+
+  // TRYING TO GET BUTTONS TO MOVE TO NEXT QUESTION AUTO
+    // $('input:radio[name="players"]').on('click keypress', function () {
+    //   if (this.checked && this.value == 'small' || this.value === 'big') {
+    //   }
+    // })
+
+  // TRYING TO GET BUTTONS TO MOVE TO NEXT QUESTION AUTO
+  // $('.question-box').on('click keypress', function() {
+  //   if ($('.question-box').length > 0) {
+  //     document.limesurvey.move.value = 'movesubmit';
+  //   }
+  //   else {
+  //     document.limesurvey.move.value = 'movenext';
+  //   }
+  //   document.limesurvey.submit();
+  // })
+
+  // HIDE AND SHOW NEXT QUESTION
+  //   $('.question-1 label').on('click keypress', function (event) {
+  //     if (event.which === 13 || event.type === 'click')
+  //       $question1.addClass('hide');
+  //     $question2.removeClass('hide');
+  //     const userAnswer = $('input[name=biology]:checked').val();
+  //     const pressedAnswer = $(this).val();
+
+  //     if (userAnswer === 'correct' || pressedAnswer === 'correct') {
+  //       answers.push(userAnswer);
+  //       // answers.push(pressedAnswer);
+  //     }
+  //   })
+
+
 // collect user inputs and filter through each array
 
   for (let i = 0; i < games.length; i++) {
@@ -664,9 +725,7 @@ $(function () {
   }
     const randomGame = Math.floor(Math.random() * gamesTypeArray.length);
   
-    $('html, body').animate({
-        scrollTop: $("#section6").offset().top
-    }, 300);
+
     
     // Smooth Scroll from https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2
 

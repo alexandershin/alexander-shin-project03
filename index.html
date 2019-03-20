@@ -7,20 +7,29 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="styles/style.css">
-  <title>Board Game's Night!</title>
+  <title>Board Games Night</title>
 </head>
 <body>
   <header>
     <div class="wrapper">
-      <div class="title" id="section0">
-        <h1>Let's play a game!</h1>
-        <p>An online quiz to help you find the <br>perfect game for any occasion!</p>
+      <div class="title animated fadeInLeft delay-1s" id="section0">
+        <h1>Let's play<br>a game!</h1>
+        <p class="animated fadeInLeft delay-2s">An online quiz to help you find the <br>perfect game for any occasion!</p>
       </div>
 
-      <div class="start">
-        <i class="fas fa-dice-six animated wobble infinite"></i>
+      <div class="start animated fadeInRight delay-3s">
+        <div class="dice animated rollIn wobble delay-4s">
+          <i class="fas fa-dice-six animated wobble infinite delay-5s"></i>
+        </div>
         <a href="#section1">Start Quiz
           <i class="fas fa-chevron-right"></i>
         </a>
@@ -125,7 +134,7 @@
     </form>
 
     <!-- FINAL GAME RESULT STARTS -->
-    <section class="results-section" id="section6">
+    <section class="results-section hide" id="section6">
       <div class="wrapper results">
       </div>
     </section>
@@ -133,6 +142,7 @@
   </main>
 
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   <script src="scripts/script.js"></script>
 
 </body>
